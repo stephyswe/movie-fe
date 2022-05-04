@@ -1,5 +1,11 @@
 {
-  "name": "movie-app",
+  "name": "cinema-app-front-end",
+  "author": {
+    "email": "stephaniiehallberg@gmail.com",
+    "name": "Stephanie Hallberg",
+    "url": "https://github.com/stephyswe"
+  },
+  "description": "Cinema application for premium users",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,6 +21,7 @@
     "sass": "^1.51.0"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "@types/node": "17.0.31",
     "@types/react": "18.0.8",
     "@types/react-dom": "18.0.3",
@@ -22,6 +29,7 @@
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.6",
     "postcss": "^8.4.13",
+    "prettier": "^2.6.2",
     "tailwindcss": "^3.0.24",
     "typescript": "4.6.4"
   }
