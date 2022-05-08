@@ -16,9 +16,9 @@
     "incremental": true,
     "baseUrl": "./app/",
     "paths": {
-      "@/components/*": ["components/*"],
       "@/ui/*": ["components/ui/*"],
       "@/screens/*": ["components/screens/*"],
+      "@/layout/*": ["components/layout/*"],
       "@/hooks/*": ["hooks/*"],
       "@/shared/*": ["shared/*"],
       "@/configs/*": ["configs/*"],
