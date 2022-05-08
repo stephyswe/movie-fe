@@ -15,7 +15,7 @@
 				"lint": "next lint"
 		},
 		"dependencies": {
-				"@reduxjs/toolkit": "^1.7.2",
+				"@reduxjs/toolkit": "^1.8.1",
 				"@tailwindcss/aspect-ratio": "^0.4.0",
 				"@tailwindcss/forms": "^0.4.0",
 				"axios": "^0.27.2",
@@ -35,7 +35,7 @@
 				"react-icons": "^4.3.1",
 				"react-loading-skeleton": "^3.1.0",
 				"react-query": "^3.38.1",
-				"react-redux": "^7.2.6",
+				"react-redux": "^8.0.1",
 				"react-redux-toastr": "^7.6.8",
 				"react-select": "^5.2.2",
 				"react-star-rating-component": "^1.4.1",
