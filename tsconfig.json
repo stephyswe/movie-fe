@@ -21,7 +21,7 @@
       "@/screens/*": ["components/screens/*"],
       "@/hooks/*": ["hooks/*"],
       "@/shared/*": ["shared/*"],
-      "@/config/*": ["config/*"],
+      "@/configs/*": ["configs/*"],
       "@/services/*": ["services/*"],
       "@/utils/*": ["utils/*"],
       "@/store/*": ["store/*"],
