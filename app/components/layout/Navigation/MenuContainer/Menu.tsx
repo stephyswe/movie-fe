@@ -12,9 +12,11 @@ const Menu: FC<{ menu: IMenu }> = ({ menu: { items, title } }) => {
     <div className={styles.menu}>
       <div className={styles.heading}>{title}</div>
       <ul className={styles.ul}>
-        {items.map((item) => (
-          <MenuItem key={item.link} item={item} />
-        ))}
+        {items.map((item) => {
+          if (item.title) {
+            return <MenuItem key={item.link} item={item} />
+          }
+        })}
         {title === 'General' ? <AuthItems /> : null}
       </ul>
     </div>
