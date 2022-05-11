@@ -1,9 +1,11 @@
-import type { NextPage } from 'next'
-
 import Home from '@/screens/home/Home'
 
-const HomePage: NextPage = () => {
+import { NextPageAuth } from '@/shared/types/auth.types'
+
+const HomePage: NextPageAuth = () => {
   return <Home />
 }
+
+HomePage.isOnlyAdmin = true
 
 export default HomePage
