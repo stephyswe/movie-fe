@@ -4,7 +4,7 @@ import { FC } from 'react'
 
 import SkeletonLoader from '../../skeleton-loader/SkeletonLoader'
 import { IUploadField } from '../form.types'
-import styles from '../form.module.scss'
+import styles from '../Form.module.scss'
 
 import { useUpload } from './useUpload'
 

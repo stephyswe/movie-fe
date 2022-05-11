@@ -3,11 +3,11 @@ import { FC } from 'react'
 import { Controller, useForm } from 'react-hook-form'
 
 import AdminNavigation from '@/ui/admin-navigation/AdminNavigation'
+import formStyles from '@/ui/form-elements/AdminItem.module.scss'
 import Button from '@/ui/form-elements/Button'
 import Field from '@/ui/form-elements/Field'
 import SlugField from '@/ui/form-elements/SlugField/SlugField'
 import UploadField from '@/ui/form-elements/UploadField/UploadField'
-import formStyles from '@/ui/form-elements/AdminForm.module.scss'
 import Heading from '@/ui/heading/Heading'
 import SkeletonLoader from '@/ui/skeleton-loader/SkeletonLoader'
 
