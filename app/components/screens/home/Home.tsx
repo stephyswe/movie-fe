@@ -1,12 +1,13 @@
 import { FC } from 'react'
 
 import Heading from '@/ui/heading/Heading'
+import Slider from '@/ui/slider/Slider'
 
 import { Meta } from '@/utils/meta'
 
 import { IHome } from './home.interface'
 
-const Home: FC<IHome> = () => {
+const Home: FC<IHome> = ({ slides }: any) => {
   return (
     <Meta
       title="Watch movies online"
@@ -16,6 +17,8 @@ const Home: FC<IHome> = () => {
         title="Watch movies online"
         className="mb-8 text-xl text-gray-300"
       />
+
+      {slides.length && <Slider slides={slides} />}
     </Meta>
   )
 }
