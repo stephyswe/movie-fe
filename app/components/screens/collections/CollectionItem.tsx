@@ -9,7 +9,6 @@ import styles from './Collections.module.scss'
 import { ICollection } from './collections.types'
 
 const CollectionItem: FC<{ collection: ICollection }> = ({ collection }) => {
-	console.log('cllec', collection)
 	return (
 		<Link href={getGenreUrl(collection.slug)}>
 			<a className={styles.collection}>

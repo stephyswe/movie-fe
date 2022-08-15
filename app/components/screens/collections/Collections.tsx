@@ -17,8 +17,6 @@ const Collections: FC<{ collections: ICollection[] }> = ({ collections }) => {
 		<Meta title={title} description={description}>
 			<Heading title={title} className={styles.heading} />
 			<Description text={description} className={styles.description} />
-			{console.log('test', collections)}
-
 			<section className={styles.collections}>
 				{collections.map((collection) => (
 					<CollectionItem key={collection._id} collection={collection} />
