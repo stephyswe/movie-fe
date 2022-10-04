@@ -4,13 +4,13 @@ import { getRatingsUrl } from '@/configs/api.config'
 
 export const RatingService = {
   async setRating(movieId: string, value: number) {
-    return axios.post<string>(getRatingsUrl('/set-rating'), {
+    return axios.post<string>(getRatingsUrl('set-rating'), {
       movieId,
       value,
     })
   },
 
   async getByUserMovie(movieId: string) {
-    return axios.get<number>(getRatingsUrl(`/${movieId}`))
+    return axios.get<number>(getRatingsUrl(`${movieId}`))
   },
 }

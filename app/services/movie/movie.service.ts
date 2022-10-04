@@ -8,15 +8,15 @@ import { getMoviesUrl } from '@/configs/api.config'
 
 export const MovieService = {
 	async getBySlug(slug: string) {
-		return axiosClassic.get<IMovie>(getMoviesUrl(`/by-slug/${slug}`))
+		return axiosClassic.get<IMovie>(getMoviesUrl(`by-slug/${slug}`))
 	},
 
 	async getByActor(actorId: string) {
-		return axiosClassic.get<IMovie[]>(getMoviesUrl(`/by-actor/${actorId}`))
+		return axiosClassic.get<IMovie[]>(getMoviesUrl(`by-actor/${actorId}`))
 	},
 
 	async getByGenres(genreIds: string[]) {
-		return axiosClassic.post<IMovie[]>(getMoviesUrl(`/by-genres`), {
+		return axiosClassic.post<IMovie[]>(getMoviesUrl(`by-genres`), {
 			genreIds,
 		})
 	},
@@ -26,17 +26,17 @@ export const MovieService = {
 	},
 
 	async updateCountOpened(slug: string) {
-		return axiosClassic.put(getMoviesUrl('/update-count-opened'), {
+		return axiosClassic.put(getMoviesUrl('update-count-opened'), {
 			slug,
 		})
 	},
 
 	async update(_id: string, data: IMovieEditInput) {
-		return axios.put<string>(getMoviesUrl(`/${_id}`), data)
+		return axios.put<string>(getMoviesUrl(`${_id}`), data)
 	},
 
 	async delete(_id: string) {
-		return axios.delete<string>(getMoviesUrl(`/${_id}`))
+		return axios.delete<string>(getMoviesUrl(`${_id}`))
 	},
 
 	async getMovies(searchTerm?: string) {
@@ -50,12 +50,12 @@ export const MovieService = {
 	},
 
 	async getById(_id: string) {
-		return axios.get<IMovieEditInput>(getMoviesUrl(`/${_id}`))
+		return axios.get<IMovieEditInput>(getMoviesUrl(`${_id}`))
 	},
 
 	async getMostPopularMovies() {
 		const { data: movies } = await axiosClassic.get<IMovie[]>(
-			getMoviesUrl('/most-popular')
+			getMoviesUrl('most-popular')
 		)
 
 		return movies

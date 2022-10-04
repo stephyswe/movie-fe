@@ -8,7 +8,7 @@ import { IActorEditInput } from '@/screens/admin/actor/actor-edit.interface'
 
 export const ActorService = {
   async getBySlug(slug: string) {
-    return axiosClassic.get<IActor>(getActorsUrl(`/by-slug/${slug}`))
+    return axiosClassic.get<IActor>(getActorsUrl(`by-slug/${slug}`))
   },
 
   async create() {
@@ -16,11 +16,11 @@ export const ActorService = {
   },
 
   async update(_id: string, data: IActorEditInput) {
-    return axios.put<string>(getActorsUrl(`/${_id}`), data)
+    return axios.put<string>(getActorsUrl(`${_id}`), data)
   },
 
   async delete(_id: string) {
-    return axios.delete<string>(getActorsUrl(`/${_id}`))
+    return axios.delete<string>(getActorsUrl(`${_id}`))
   },
 
   async getAll(searchTerm?: string) {
@@ -34,6 +34,6 @@ export const ActorService = {
   },
 
   async getById(_id: string) {
-    return axios.get<IActorEditInput>(getActorsUrl(`/${_id}`))
+    return axios.get<IActorEditInput>(getActorsUrl(`${_id}`))
   },
 }
