@@ -1,4 +1,4 @@
-export const API_URL = `https://nest-movie-be.herokuapp.com/api`
+export const API_URL = `${process.env.APP_URL}/api`
 
 export const getAuthUrl = (id: string) => `/auth/${id}`
 export const getUsersUrl = (string: string) => `/users/${string}`
