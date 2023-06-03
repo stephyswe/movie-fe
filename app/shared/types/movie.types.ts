@@ -26,6 +26,7 @@ export interface IMovie {
 	_id: string
 	poster: string
 	bigPoster: string
+	description: string
 	title: string
 	parameters: IParameters
 	genres: IGenre[]

@@ -86,6 +86,13 @@ const MovieEdit: FC = () => {
               error={errors.parameters?.year}
               style={{ width: '31%' }}
             />
+            <Field
+              {...register('description', {
+                required: 'Description is required!',
+              })}
+              placeholder="Description"
+              error={errors.title}
+            />
 
             <Controller
               name="genres"
